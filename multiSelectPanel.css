@@ -1,0 +1,181 @@
+.multiSelectPanel {
+    width: 455px;
+    height: 358px;
+    background-color: #ededed;
+    padding: 5px 0 0 5px;
+    border-radius: 3px;
+    border: 1px solid #dcdcdc;
+}
+.multiSelectPanel-left,
+.multiSelectPanel-right {
+    width: 218px;
+    height: 302px;
+    float: left;
+    margin-right: 5px;
+    border-radius: 3px;
+}
+.multiSelectPanel-left-top,
+.multiSelectPanel-right-top {
+    height: 38px;
+    border: 1px solid #dcdcdc;
+    background-color: #f7f7f7;
+    padding: 0 27px 0 10px;
+    line-height: 38px;
+}
+.multiSelectPanel-title,
+.multiSelectPanel-left-title {
+    color: #5b5b5b;
+    font-weight: 700;
+}
+.multiSelectPanel-left-search,
+.multiSelectPanel-right-search {
+    height: 49px;
+    background-color: #f7f7f7;
+    border: 1px solid #dcdcdc;
+    border-top: 0;
+    padding: 10px 9px;
+}
+.multiSelectPanel-left-panel,
+.multiSelectPanel-right-panel {
+    height: 174px;
+    border: 1px solid #dcdcdc;
+    border-top: 0;
+    background-color: #fff;
+    overflow-y: scroll;
+}
+.itemSelectAll,
+.itemCheckbox,
+.itemDeleteAll,
+.itemDelCheckbox {
+    display: none;
+}
+.itemSelectAll + label,
+.itemCheckbox + label {
+    background: #fff;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #e2e2e2;
+    vertical-align: text-top;
+    border-radius: 15px;
+    float: right;
+    top: 9px;
+    position: relative;
+}
+.itemDeleteAll + label,
+.itemDelCheckbox + label {
+    background: #fff;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #f66;
+    vertical-align: text-top;
+    border-radius: 15px;
+    float: right;
+    top: 9px;
+    position: relative;
+    background: url(delete.png) no-repeat center center;
+}
+
+.itemSelectAll:checked + label {
+    background: url(checked.png) no-repeat center center;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #39f;
+    vertical-align: text-top;
+}
+
+.itemCheckbox:checked + label {
+    background: url(checked.png) no-repeat center center;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #39f;
+    vertical-align: text-top;
+}
+
+.itemDeleteAll:checked + label {
+    background: url(delete.png) no-repeat center center;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #f66;
+    vertical-align: text-top;
+}
+
+.itemDelCheckbox:checked + label {
+    background: url(delete.png) no-repeat center center;
+    height: 14px;
+    width: 14px;
+    display: inline-block;
+    padding: 0;
+    border: 1px solid #f66;
+    vertical-align: text-top;
+}
+.multiSelectPanel-searchBox {
+    width: 168px;
+    height: 28px;
+    border: 1px solid #dcdcdc;
+    padding-left: 10px;
+}
+.multiSelectPanel-searchBox-btn {
+    height: 28px;
+    width: 28px;
+    background: url(search.png) no-repeat center center;
+    background-color: #fff;
+    text-align: center;
+    line-height: 28px;
+    display: inline-block;
+    border: 1px solid #dcdcdc;
+    border-left: 0;
+    position: relative;
+    top: -28px;
+    left: 168px;
+}
+.multiSelectPanel-left-panel ul li,
+.multiSelectPanel-right-panel ul li {
+    height: 33px;
+    line-height: 33px;
+    padding: 0 10px;
+}
+.multiSelectPanel-left-panel ul li:hover,
+.multiSelectPanel-right-panel ul li:hover {
+    background-color: #f7f7f7;
+}
+.multiSelectPanel-left-bottom,
+.multiSelectPanel-right-bottom {
+    background-color: #f7f7f7;
+    color: #666;
+    line-height: 38px;
+    height: 38px;
+    padding: 0 10px;
+    border: 1px solid #dcdcdc;
+    border-top: 0;
+}
+.multiSelectPanel-saveItem,
+.multiSelectPanel-deleteItem {
+    display: inline-block;
+    width: 68px;
+    height: 28px;
+    border: 1px solid #dcdcdc;
+    background-color: #fff;
+    color: #666;
+    line-height: 28px;
+    text-align: center;
+    border-radius: 5px;
+    margin-right: 9px;
+}
+.multiSelectPanel-saveItem:hover,
+.multiSelectPanel-deleteItem:hover {
+    border: 1px solid #06c;
+    color: #06c;
+}
+.multiSelectPanel-bottom {
+    margin-top: 8px;
+}
