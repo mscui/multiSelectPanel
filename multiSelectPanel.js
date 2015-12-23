@@ -1,3 +1,24 @@
+/* 不同的panel需要不同的option，option必须的参数：name,title,data(左边的内容),selectlist(右边的内容);isShowBtn(可选，默认是true)
+// html页面
+<div class="panel-sale">
+    {%widget
+        name="business-end:widget/multiSelectPanel/multiSelectPanel.tpl"
+    %}
+</div>
+
+// js
+// 新建时候的逻辑
+var options = {
+    name: 'sale',
+    title: '销售',
+    // data: {
+    //     list:[{ucid:'123',name:'销售1'},{ucid:'223',name:'销售2'},{ucid:'323',name:'销售3'},{ucid:'423',name:'销售4'}],
+    //     selectlist: []
+    // },
+    isShowBtn: false
+};
+var panelSale = $('.panel-sale').multiSelectPanel(options);
+*/
 ;(function($) {
     //定义MultiSelectPanel的构造函数
     var MultiSelectPanel = function(ele, opt) {
