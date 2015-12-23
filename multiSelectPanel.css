@@ -1,6 +1,6 @@
 .multiSelectPanel {
     width: 455px;
-    height: 358px;
+    height: 312px;
     background-color: #ededed;
     padding: 5px 0 0 5px;
     border-radius: 3px;
@@ -118,13 +118,15 @@
     border: 1px solid #f66;
     vertical-align: text-top;
 }
-.multiSelectPanel-searchBox {
+.multiSelectPanel-left-searchBox,
+.multiSelectPanel-right-searchBox {
     width: 168px;
     height: 28px;
     border: 1px solid #dcdcdc;
     padding-left: 10px;
 }
-.multiSelectPanel-searchBox-btn {
+.multiSelectPanel-left-searchBox-btn,
+.multiSelectPanel-right-searchBox-btn {
     height: 28px;
     width: 28px;
     background: url(search.png) no-repeat center center;
@@ -158,9 +160,12 @@
     border: 1px solid #dcdcdc;
     border-top: 0;
 }
+.multiSelectPanel-bottom {
+    display: none;
+}
 .multiSelectPanel-saveItem,
-.multiSelectPanel-deleteItem {
-    display: inline-block;
+.multiSelectPanel-cancleItem {
+    display: none;
     width: 68px;
     height: 28px;
     border: 1px solid #dcdcdc;
@@ -172,7 +177,7 @@
     margin-right: 9px;
 }
 .multiSelectPanel-saveItem:hover,
-.multiSelectPanel-deleteItem:hover {
+.multiSelectPanel-cancleItem:hover {
     border: 1px solid #06c;
     color: #06c;
 }
